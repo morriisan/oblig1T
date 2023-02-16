@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="kino.js"></script>
+</head>
+<body>
+<h1>Bestilling av kinobiletter</h1>
+
+<table>
+    <tr>
+        <td>Velg film:</td>
+        <td>
+            <select name="film" id="films">
+                <option value="velg-film">velg film</option>
+                <option value="spider-man">spider-man</option>
+                <option value="harry-potter">harry-potter</option>
+            </select>
+        </td>
+        <td><span id="error_film"></span></td>
+    </tr>
+    <tr>
+        <td>Antall</td>
+        <td><input value="0" type="number" id="antall"></td>
+        <td><span id="error_antall"></span></td>
+    </tr>
+    <tr>
+        <td>Fornavn</td>
+        <td><input type="text" id="fornavn"></td>
+        <td><span id="error_fname"></span></td>
+    </tr>
+    <tr>
+        <td>Etternavn</td>
+        <td><input type="text" id="etternavn"></td>
+        <td><span id="error_ename"></span></td>
+    </tr>
+    <tr>
+        <td>Telefonnr</td>
+        <td><input type="number" id="telfnr"></td>
+        <td><span id="error_tlfnr"></span></td>
+    </tr>
+    <tr>
+        <td>Epost</td>
+        <td><input type="text" id="epost"></td>
+        <td><span id="error_epost"></span></td>
+    </tr>
+</table>
+<br>
+<button type="button" onclick="kjop()">Kjøp bilett</button>
+<h2>Alle biletter</h2>
+<div id="result"></div>
+
+<button type="button" onclick="slett()" >slett alle billetter</button>
+
+<span id="t"></span>
+</body>
+</html>
