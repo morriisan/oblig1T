@@ -108,4 +108,6 @@ function slett(){
     //sletter all data fra index 0 til siste index i array kunder.
     kunder.splice(0,kunder.length);
 
+    //sssss
+
 }
